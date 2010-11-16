@@ -1,0 +1,36 @@
+[user]
+  name = Takumi Tsunokake
+  email = t-tsunokake@esm.co.jp
+[color]
+  ui = auto
+[alias]
+  a  = add
+  ad = add
+  bd = branch -d
+  bD = branch -D
+  bl = blame
+  br = branch
+  brd = branch -d
+  brD = branch -D
+  ca = commit --amend
+  ci = commit
+  cm = commit
+  cia = commit --amend
+  cma = commit --amend
+  co = checkout
+  cp = cherry-pick
+  df = diff
+  di = diff
+  dif = diff
+  l  = log
+  lf = log --pretty=\"format:%ad %h (%an): %s\" --date=short # log formatted
+  lg = log
+  lo = log --pretty=oneline # log oneline
+  lp = log -p
+  mg = merge
+  pl = pull
+  pr = pull --rebase
+  ps = push
+  rs = reset
+  s  = status
+  st = status
