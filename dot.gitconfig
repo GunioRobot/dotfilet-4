@@ -9,9 +9,11 @@
   bd = branch -d
   bD = branch -D
   bl = blame
+  bm = branch -m
   br = branch
   brd = branch -d
   brD = branch -D
+  brm = branch -m
   ca = commit --amend
   ci = commit
   cm = commit
