@@ -6,7 +6,6 @@ setopt auto_cd
 setopt correct
 setopt cdable_vars
 
-# ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -28,6 +27,7 @@ alias rake_db_migrate_test='rake db:migrate RAILS_ENV=test'
 alias rds='rake_db_seed'
 alias rdm='rake_db_migrate'
 alias rdmt='rake_db_migrate_test'
+alias s='svn'
 alias up='cd ..'
 
 PROMPT='%n@%m:%(5~,%-2~/.../%2~,%~)%# '
