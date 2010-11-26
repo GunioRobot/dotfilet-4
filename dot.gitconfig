@@ -4,35 +4,27 @@
 [color]
   ui = auto
 [alias]
-  a  = add
   ad = add
   bd = branch -d
-  bD = branch -D
   bl = blame
   bm = branch -m
   br = branch
   brd = branch -d
-  brD = branch -D
   brm = branch -m
   ca = commit --amend
   ci = commit
   cm = commit
-  cia = commit --amend
-  cma = commit --amend
   co = checkout
   cp = cherry-pick
   df = diff
   di = diff
-  dif = diff
-  l  = log
-  lf = log --pretty=\"format:%ad %h (%an): %s\" --date=short # log formatted
-  lg = log
-  lo = log --pretty=oneline # log oneline
+  lo = log --graph --format='[%h] %s'
   lp = log -p
+  lv = log --graph --format='[%h] %s (%cn at %cd)' --date=short # log verbose
   mg = merge
   pl = pull
   pr = pull --rebase
   ps = push
   rs = reset
-  s  = status
+  sh = stash
   st = status
