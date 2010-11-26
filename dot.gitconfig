@@ -20,7 +20,7 @@
   di = diff
   lo = log --graph --format='[%h] %s'
   lp = log -p
-  lv = log --graph --format='[%h] %s (%cn at %cd)' --date=short # log verbose
+  lv = log --graph --format='[%h %cd] %s (%cn)' --date=local # log verbose
   mg = merge
   pl = pull
   pr = pull --rebase
