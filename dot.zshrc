@@ -12,7 +12,6 @@ alias l='ls -CF'
 alias sl='ls'
 
 alias b='bundle1.8'
-alias bundle='b'
 alias be='b exec'
 alias bi='b install'
 alias ber='be rspec'
