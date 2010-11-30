@@ -13,10 +13,8 @@
   brm = branch -m
   ca = commit --amend
   ci = commit
-  cm = commit
   co = checkout
   cp = cherry-pick
-  df = diff
   di = diff
   lo = log --graph --format='[%h] %s'
   lp = log -p
