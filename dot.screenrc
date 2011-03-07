@@ -8,5 +8,5 @@ defkanji utf-8
 encoding utf-8 utf-8
 defencoding utf-8
 
-hardstatus alwayslastline "%{= dk} %-Lw%25L>%{b kg} %n %t %{-}%+Lw%-025=%{b km} %{.c} %Y/%m/%d %C:%s %A "
+hardstatus alwayslastline "%{= dk} %-Lw%23L>%{b kg} %n %t %{-}%+Lw%-023=%{b km} %{.c} %Y/%m/%d %02c:%s"
 startup_message off
