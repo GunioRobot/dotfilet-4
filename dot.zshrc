@@ -27,7 +27,7 @@ alias ra='rails'
 
 # rake
 alias rake_db_seed='rake db:seed'
-alias rake_db_migrate='rake db:migrate'
+alias rake_db_migrate='rake db:migrate:redo db:test:clone_structure'
 alias rake_db_migrate_test='rake db:migrate RAILS_ENV=test'
 alias rds='rake_db_seed'
 alias rdm='rake_db_migrate'
