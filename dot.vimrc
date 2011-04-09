@@ -16,7 +16,6 @@ set fileencodings=utf-8,eucjp,iso2022jp " 自動判別用の文字コード
 " ----------------------------------------------------------------------
 " RSense
 let g:rsenseHome="/opt/rsense-0.3/" " RSense をインストールしたディレクトリ
-
 " matchit
 let b:match_words="<begin>:<end>"
 
@@ -77,3 +76,6 @@ map co 0i#j    " # でコメントアウトして次の行に移動（Comment O
 map hco 0i-#j   " -# でコメントアウトして次の行に移動（Haml Comment out）
 
 set ambiwidth=double
+
+" Rename file
+command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))|w
