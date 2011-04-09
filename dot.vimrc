@@ -1,79 +1,82 @@
 " ----------------------------------------------------------------------
-" ファイル形式
+" File types
 " ----------------------------------------------------------------------
-filetype on        " ファイル形式の検出をする
-filetype indent on " ファイル形式別のインデントをする
-filetype plugin on " プラグインを有効にする
+filetype on        " See file type.
+filetype indent on " Indent depends on file type.
+filetype plugin on " Valid plugin.
 
 " ----------------------------------------------------------------------
-" 文字コード
+" Character codes
 " ----------------------------------------------------------------------
-set encoding=utf-8                      " デフォルトの文字コード
-set fileencodings=utf-8,eucjp,iso2022jp " 自動判別用の文字コード
+set encoding=utf-8                      " Default.
+set fileencodings=utf-8,eucjp,iso2022jp " Select automatically.
 
 " ----------------------------------------------------------------------
-" プラグイン
+" Plugins
 " ----------------------------------------------------------------------
 " RSense
-let g:rsenseHome="/opt/rsense-0.3/" " RSense をインストールしたディレクトリ
+let g:rsenseHome="/opt/rsense-0.3/"
+
 " matchit
 let b:match_words="<begin>:<end>"
 
 " ----------------------------------------------------------------------
-" 空白文字の扱い
+" Space Characters
 " ----------------------------------------------------------------------
-set tabstop=2    " タブ幅
-set shiftwidth=2 " シフトで移動する幅
-set expandtab    " タブの代わりに半角スペースを入れる
+set tabstop=2    " Tab width.
+set shiftwidth=2 " Shift width.
+set expandtab    " Insert half space instead of tab.
 
 " ----------------------------------------------------------------------
-" ステータス
+" Statuses
 " ----------------------------------------------------------------------
-set laststatus=2 " 常にステータスラインを表示
-set showcmd      " 入力中のコマンドをステータスに表示
+set laststatus=2 " Display status line always.
+set showcmd      " Show inputting command to status line.
 
-" ステータスラインに文字コードと改行文字を表示
+" Display character code and break to status line.
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 " ----------------------------------------------------------------------
-" 検索
+" Searchings
 " ----------------------------------------------------------------------
-set incsearch                  " インクリメンタル検索する
-set ignorecase                 " 検索時に大文字と小文字を区別しない
-map fd :RSenseJumpToDefinition " 定義元に飛ぶ（Find Definition）
+set incsearch                  " Incremental search.
+set ignorecase                 " Ignore case.
 
-" プロジェクト内検索（Find Project）
-map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto 
+" Find project.
+map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
 
-" ----------------------------------------------------------------------
-" ジャンプ・移動
-" ----------------------------------------------------------------------
-map bf :e # " 前開いていたファイルに戻る（Back to File）
-map bc `'   " ジャンプ前のカーソルに戻る（Back to Cursor）
+" Ruby
+map fd :RSenseJumpToDefinition " Find Definition.
 
 " ----------------------------------------------------------------------
-" ハイライト
+" Movings
 " ----------------------------------------------------------------------
-syntax on    " シンタックスハイライトを有効にする
-set hlsearch " 検索結果の文字列をハイライトする
+map bf :e # " Back to previous File
+map bc `'   " Back to previous jumped Cursor
 
-" 全角スペースをハイライトする
+" ----------------------------------------------------------------------
+" Highlights
+" ----------------------------------------------------------------------
+syntax on    " Enable highlights.
+set hlsearch " Highlight searched strings.
+
+" Highlight double-byte space.
 highlight ZenkakuSpace ctermbg=white
 match ZenkakuSpace /　/
 
 " ----------------------------------------------------------------------
-" その他
+" Others
 " ----------------------------------------------------------------------
-set nocompatible " Vim の拡張機能を使う
-set nu           " 行番号を表示
-set showmatch    " 対応する括弧を表示
-set hid          " 編集中の内容を保持して別の画面に切り替える
-set scroll=1     " ^u, ^d でスクロールする行数
-set noswapfile   " スワップファイルは作らない
+set nocompatible " Use extended functions of Vim.
+set nu           " Display line numbers.
+set showmatch    " Show bracket pair.
+set hid          " Buffer switchable with not-saved buffers.
+set scroll=1     " Set scroll number of ^u and ^d.
+set noswapfile   " Make no swap file.
 
-" （※注意 ^[ は ^V [ と入力）
-map co 0i#j    " # でコメントアウトして次の行に移動（Comment Out）
-map hco 0i-#j   " -# でコメントアウトして次の行に移動（Haml Comment out）
+" * Attension: '^[' is inputtable as typing '^V ['.
+map co 0i#j     " Comment Out and move to next line.
+map hco 0i-#j   " Haml Comment Out and move to next line.
 
 set ambiwidth=double
 
