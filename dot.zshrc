@@ -1,12 +1,22 @@
+# === Complement
 autoload -U compinit
 compinit
 
-setopt auto_pushd
-setopt auto_cd
-setopt correct
-setopt cdable_vars
+# === Language
+export LANG=en_US
 
-# list
+# === History
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt hist_ignore_dups # Ignore duplicated command of history
+setopt share_history # Share history between terminals by HISTFILE
+
+# === Prompt
+PROMPT='%n@%m:%(5~,%-2~/.../%2~,%~)%# '
+
+# === Aliases
+# lists
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -41,4 +51,8 @@ alias s='svn'
 alias sc='screen -U'
 alias up='cd ..'
 
-PROMPT='%n@%m:%(5~,%-2~/.../%2~,%~)%# '
+# === Others
+setopt auto_pushd
+setopt auto_cd
+setopt correct
+setopt cdable_vars
