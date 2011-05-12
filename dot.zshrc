@@ -52,7 +52,8 @@ alias sc='screen -U'
 alias up='cd ..'
 
 # === Others
-setopt auto_pushd
-setopt auto_cd
-setopt correct
+setopt auto_cd # cd-able without cd
+setopt auto_pushd # cd-able to past directories by cd -[tab]
+setopt correct # Correct wrong commands
+setopt list_packed
 setopt cdable_vars
