@@ -1,44 +1,32 @@
-" ----------------------------------------------------------------------
-" File types
-" ----------------------------------------------------------------------
+" === File types
 filetype on        " See file type.
 filetype indent on " Indent depends on file type.
 filetype plugin on " Valid plugin.
 
-" ----------------------------------------------------------------------
-" Character codes
-" ----------------------------------------------------------------------
+" === Character codes
 set encoding=utf-8                      " Default.
 set fileencodings=utf-8,eucjp,iso2022jp " Select automatically.
 
-" ----------------------------------------------------------------------
-" Plugins
-" ----------------------------------------------------------------------
+" === Plugins
 " RSense
 let g:rsenseHome="/opt/rsense-0.3/"
 
 " matchit
 let b:match_words="<begin>:<end>"
 
-" ----------------------------------------------------------------------
-" Space Characters
-" ----------------------------------------------------------------------
+" === Space Characters
 set tabstop=2    " Tab width.
 set shiftwidth=2 " Shift width.
 set expandtab    " Insert half space instead of tab.
 
-" ----------------------------------------------------------------------
-" Statuses
-" ----------------------------------------------------------------------
+" === Statuses
 set laststatus=2 " Display status line always.
 set showcmd      " Show inputting command to status line.
 
 " Display character code and break to status line.
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
-" ----------------------------------------------------------------------
-" Searchings
-" ----------------------------------------------------------------------
+" === Searchings
 set incsearch                  " Incremental search.
 set ignorecase                 " Ignore case.
 
@@ -48,15 +36,11 @@ map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
 " Ruby
 map fd :RSenseJumpToDefinition " Find Definition.
 
-" ----------------------------------------------------------------------
-" Movings
-" ----------------------------------------------------------------------
+" ===  Movings
 map bf :e # " Back to previous File
 map bc `'   " Back to previous jumped Cursor
 
-" ----------------------------------------------------------------------
-" Highlights
-" ----------------------------------------------------------------------
+" === Highlights
 syntax on    " Enable highlights.
 set hlsearch " Highlight searched strings.
 
@@ -64,9 +48,7 @@ set hlsearch " Highlight searched strings.
 highlight ZenkakuSpace ctermbg=white
 match ZenkakuSpace /　/
 
-" ----------------------------------------------------------------------
-" Others
-" ----------------------------------------------------------------------
+" === Others
 set nocompatible " Use extended functions of Vim.
 set nu           " Display line numbers.
 set showmatch    " Show bracket pair.
