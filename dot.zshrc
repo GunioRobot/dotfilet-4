@@ -3,10 +3,6 @@
 autoload -U compinit
 compinit
 
-# Predict command; studies inputted commands
-autoload predict-on
-predict-on
-
 # === Language
 export LANG=en_US
 
