@@ -3,7 +3,8 @@
 autoload -U compinit
 compinit
 
-zstyle ':completion:*' list-colors '' # Colorize completion e.g. ls [tab]
+# Colorize completion list e.g. ls [tab]
+zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
 # === Language
 export LANG=en_US
@@ -44,6 +45,8 @@ alias screen='screen -U'
 alias up='cd ..'
 
 # === Others
+export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
+
 setopt auto_cd # cd-able without cd
 setopt auto_pushd # cd-able to past directories by cd -[tab]
 setopt correct # Correct wrong commands
