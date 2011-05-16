@@ -1,7 +1,9 @@
 # === Complement
-# Command complemention e.g. ls -[Tab] then list options
+# Command complemention e.g. ls -[tab] then list options
 autoload -U compinit
 compinit
+
+zstyle ':completion:*' list-colors '' # Colorize completion e.g. ls [tab]
 
 # === Language
 export LANG=en_US
@@ -18,8 +20,7 @@ PROMPT='%n@%m:%(5~,%-2~/.../%2~,%~)%# '
 
 # === Aliases
 # lists
-alias l='ls -CF'
-alias ll='ls -alF'
+alias ls='ls -FG'
 alias la='ls -A'
 alias sl='ls'
 
