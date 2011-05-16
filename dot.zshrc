@@ -36,11 +36,15 @@ alias rake_seed='rake db:seed'
 alias rake_migration='rake db:migrate:redo db:test:clone_structure'
 
 # others
-alias du='du -h'
 alias e='exit'
 alias g='git'
+alias j='jobs -l'
+alias n='netstat -tuna'
+alias p='ps auxxx'
 alias r='rails'
 alias s='svn'
+
+alias du='du -h'
 alias screen='screen -U'
 alias up='cd ..'
 
