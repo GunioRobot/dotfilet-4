@@ -7,7 +7,7 @@ compinit
 zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
 # === Language
-export LANG=en_US
+export LANG=ja_JP.UTF-8
 
 # === History
 HISTFILE=~/.zsh_history
