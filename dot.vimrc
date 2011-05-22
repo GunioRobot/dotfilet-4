@@ -48,6 +48,14 @@ set hlsearch " Highlight searched strings.
 highlight ZenkakuSpace ctermbg=white
 match ZenkakuSpace /　/
 
+" === Command Line
+" Emacs-like movings
+:cnoremap <C-A> <Home>
+:cnoremap <C-B> <Left>
+:cnoremap <C-D> <Delete>
+:cnoremap <C-F> <Right>
+:cnoremap <C-K> <Delete>
+
 " === Others
 set nocompatible " Use extended functions of Vim.
 set nu           " Display line numbers.
