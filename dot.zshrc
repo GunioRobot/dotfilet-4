@@ -25,23 +25,26 @@ alias ls='ls -FG'
 alias la='ls -A'
 alias sl='ls'
 
-# bundler
-alias b='bundle'
-alias be='bundle exec'
-alias bi='bundle install'
-alias ber='bundle rspec'
-
 # rake
 alias rake_seed='rake db:seed'
 alias rake_migration='rake db:migrate:redo db:test:clone_structure'
 
 # others
+alias b='bundle'
+alias be='bundle exec'
+alias bi='bundle install'
+alias ber='bundle rspec'
+
 alias e='exit'
 alias g='git'
 alias j='jobs -l'
 alias n='netstat -tuna'
 alias p='ps auxxx'
+
 alias r='rails'
+alias rc='rails c'
+alias rs='rails s'
+
 alias s='svn'
 
 alias du='du -h'
