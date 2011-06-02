@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 cp dot.gemrc $HOME/.gemrc
 cp dot.gitconfig $HOME/.gitconfig
 cp dot.screenrc $HOME/.screenrc
@@ -16,3 +18,5 @@ fi
 cp dot.vim/autoload/* $HOME/.vim/autoload
 cp dot.vim/doc/* $HOME/.vim/doc
 cp dot.vim/plugin/* $HOME/.vim/plugin
+
+source $HOME/.zshrc
