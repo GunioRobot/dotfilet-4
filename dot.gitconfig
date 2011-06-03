@@ -16,6 +16,8 @@
   co = checkout
   cp = cherry-pick
   di = diff
+  ft = fetch
+  gr = grep
   lo = log --graph --format='[%h] %s'
   lp = log -p
   lv = log --graph --format='[%h %cd] %s (%cn)' --date=local # log verbose
@@ -23,7 +25,8 @@
   pl = pull
   pr = pull --rebase
   ps = push
+  rb = rebase
   rs = reset
-  scouter = shortlog -s
+  sc = shortlog -s # scouter
   sh = stash
   st = status
