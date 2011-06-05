@@ -86,9 +86,9 @@ match EOLSpace /\s\+$/
 
 
 " === Others
-set nu           " Display line numbers
+set number       " Display line numbers
 set showmatch    " Show bracket pair
-set hid          " Buffer switchable with not-saved buffers
+set hidden       " Buffer switchable with not-saved buffers
 set scroll=1     " Set scroll number of ^u and ^d
 set noswapfile   " Make no swap file
 
