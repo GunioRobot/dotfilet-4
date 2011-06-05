@@ -7,7 +7,6 @@
 " === Vundle
 set nocompatible " Use extended functions of Vim
 filetype off
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -73,10 +72,9 @@ map bc `'   " Back to previous jumped Cursor
 syntax on    " Enable highlights
 set hlsearch " Highlight searched strings
 
-" Highlight double-byte space
-highlight ZenkakuSpace ctermbg=white
-match ZenkakuSpace /　/
-
+" Highlight EOL space
+highlight EOLSpace ctermbg=white
+match EOLSpace /\s\+$/
 
 " === Command Line
 " Emacs-like movings
