@@ -13,6 +13,7 @@
   brr = branch -r
   ca = commit --amend
   ci = commit
+  cim = commit -m
   co = checkout
   cp = cherry-pick
   di = diff
@@ -27,6 +28,7 @@
   ps = push
   rb = rebase
   rs = reset
+  rsh = reset --hard
   sc = shortlog -s # scouter
   sh = stash
   st = status
