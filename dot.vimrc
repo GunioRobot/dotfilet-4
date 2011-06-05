@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
 Bundle 'AutoComplPop'
+Bundle 'dark-ruby'
 Bundle 'rails.vim'
 Bundle 'surround.vim'
 
