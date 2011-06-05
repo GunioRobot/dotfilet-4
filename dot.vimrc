@@ -1,4 +1,7 @@
-" First, set up Vundle (see https://github.com/gmarik/vundle)
+" === Preparation
+" * Set up Vundle (see https://github.com/gmarik/vundle)
+"   * git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+"   * :BundleInstall
 
 " === Vundle
 set nocompatible " Use extended functions of Vim
