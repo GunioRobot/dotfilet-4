@@ -1,5 +1,21 @@
+" First, set up Vundle (see https://github.com/gmarik/vundle)
+
+" === Vundle
+set nocompatible " Use extended functions of Vim.
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
+Bundle 'AutoComplPop'
+Bundle 'rails.vim'
+Bundle 'surround.vim'
+
 " === File types
-filetype on        " See file type.
 filetype indent on " Indent depends on file type.
 filetype plugin on " Valid plugin.
 
@@ -57,7 +73,6 @@ match ZenkakuSpace /　/
 :cnoremap <C-K> <Delete>
 
 " === Others
-set nocompatible " Use extended functions of Vim.
 set nu           " Display line numbers.
 set showmatch    " Show bracket pair.
 set hid          " Buffer switchable with not-saved buffers.
@@ -71,4 +86,5 @@ map hco 0i-#j   " Haml Comment Out and move to next line.
 set ambiwidth=double
 
 " Rename file
+" Usage: On file you want to change, type :Rename [new_file_name]
 command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))|w
