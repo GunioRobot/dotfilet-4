@@ -46,6 +46,7 @@ alias rc='rails c'
 alias rs='rails s'
 
 alias s='svn'
+alias v='vim'
 
 alias du='du -h'
 alias screen='screen -U'
