@@ -15,9 +15,13 @@ Bundle 'gmarik/vundle'
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
 Bundle 'AutoComplPop'
-Bundle 'dark-ruby'
+Bundle 'Command-T'
+Bundle 'cucumber.zip'
 Bundle 'rails.vim'
 Bundle 'surround.vim'
+
+" GitHub repos
+Bundle 'vim-ruby/vim-ruby'
 
 
 " === File types
