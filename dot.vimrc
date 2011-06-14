@@ -14,8 +14,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
+" Dependency:
+"   FuzzyFinder requires L9
 Bundle 'AutoComplPop'
 Bundle 'Command-T'
+Bundle 'FuzzyFinder'
+Bundle 'L9'
 Bundle 'cucumber.zip'
 Bundle 'rails.vim'
 Bundle 'surround.vim'
