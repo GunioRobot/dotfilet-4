@@ -20,9 +20,7 @@
   cm = commit -m
 
   co = checkout
-  cp = cherry-pick
   di = diff
-  ft = fetch
   gr = grep
 
   lo = log --graph --format='[%h] %s'
@@ -35,11 +33,9 @@
   pr = pull --rebase
 
   ps = push
-  rb = rebase
 
   rh = reset --hard
   rs = reset
 
   sc = shortlog -s # scouter
-  sh = stash
   st = status
