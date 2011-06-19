@@ -20,7 +20,10 @@
   cm = commit -m
 
   co = checkout
+
   di = diff
+  dic = diff --cached
+
   gr = grep
 
   lo = log --graph --format='[%h] %s'

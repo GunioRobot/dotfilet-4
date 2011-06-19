@@ -1,7 +1,10 @@
-" === Preparation
+" === Plugin Preparation
 " * Set up Vundle (see https://github.com/gmarik/vundle)
 "   * git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 "   * :BundleInstall
+"
+" === Plugin Cleaning
+" * :BundleClean
 
 
 " === Vundle
@@ -20,6 +23,7 @@ Bundle 'AutoComplPop'
 Bundle 'Command-T'
 Bundle 'FuzzyFinder'
 Bundle 'L9'
+Bundle 'OOP-javascript-indentation'
 Bundle 'cucumber.zip'
 Bundle 'rails.vim'
 Bundle 'surround.vim'
