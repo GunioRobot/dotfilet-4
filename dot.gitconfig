@@ -37,6 +37,8 @@
 
   ps = push
 
+  rb = rebase
+
   rh = reset --hard
   rs = reset
 

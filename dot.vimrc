@@ -27,6 +27,7 @@ Bundle 'OOP-javascript-indentation'
 Bundle 'cucumber.zip'
 Bundle 'rails.vim'
 Bundle 'surround.vim'
+Bundle 'unite.vim'
 
 " GitHub repos
 Bundle 'vim-ruby/vim-ruby'
