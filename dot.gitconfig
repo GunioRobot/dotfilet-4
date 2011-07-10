@@ -1,5 +1,6 @@
 [core]
   editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
 [user]
   name = Takumi Tsunokake
   email = t-tsunokake@esm.co.jp
