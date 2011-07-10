@@ -1,11 +1,11 @@
 #!/bin/zsh
 
-cp dot.gemrc $HOME/.gemrc
-cp dot.gitconfig $HOME/.gitconfig
-cp dot.gitignore $HOME/.gitignore
-cp dot.screenrc $HOME/.screenrc
-cp dot.rspec $HOME/.rspec
-cp dot.vimrc $HOME/.vimrc
-cp dot.zshrc $HOME/.zshrc
+cp dot.gemrc ~/.gemrc
+cp dot.gitconfig ~/.gitconfig
+cp dot.gitignore ~/.gitignore
+cp dot.screenrc ~/.screenrc
+cp dot.rspec ~/.rspec
+cp dot.vimrc ~/.vimrc
+cp dot.zshrc ~/.zshrc
 
-source $HOME/.zshrc
+source ~/.zshrc
