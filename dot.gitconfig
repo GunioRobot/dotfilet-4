@@ -23,6 +23,7 @@
   cm = commit -m
 
   co = checkout
+  cob = checkout -b
 
   di = diff
   dic = diff --cached
