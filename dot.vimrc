@@ -30,6 +30,7 @@ Bundle 'surround.vim'
 Bundle 'unite.vim'
 
 " GitHub repos
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-ruby/vim-ruby'
 
 

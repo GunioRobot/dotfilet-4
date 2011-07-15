@@ -15,6 +15,7 @@
   br = branch
   bra = branch -a
   brd = branch -d
+  brdf = branch -D # BRanch Delete Force
   brm = branch -m
   brr = branch -r
 
@@ -32,7 +33,7 @@
 
   lo = log --graph --format='[%h] %s'
   lp = log -p
-  lv = log --graph --format='[%h %cd] %s (%cn)' --date=local # log verbose
+  lv = log --graph --format='[%h %cd] %s (%cn)' --date=local # Log Verbose
 
   mg = merge
 
@@ -46,5 +47,5 @@
   rh = reset --hard
   rs = reset
 
-  sc = shortlog -s # scouter
+  sc = shortlog -s # SCouter
   st = status

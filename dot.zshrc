@@ -33,7 +33,12 @@ alias rake_migration='rake db:migrate:redo db:test:clone_structure'
 alias b='bundle'
 alias be='bundle exec'
 alias bi='bundle install'
-alias ber='bundle rspec'
+alias bo='bundle open'
+
+alias c='coffee'
+alias cof='coffee'
+
+alias du='du -h'
 
 alias e='exit'
 alias g='git'
@@ -46,10 +51,12 @@ alias rc='rails c'
 alias rs='rails s'
 
 alias s='svn'
+
+alias sc='screen -U'
+alias screen='screen -U'
+
 alias v='vim'
 
-alias du='du -h'
-alias screen='screen -U'
 alias up='cd ..'
 
 # === Git status
