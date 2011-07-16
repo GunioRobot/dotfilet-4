@@ -28,6 +28,7 @@ Bundle 'cucumber.zip'
 Bundle 'rails.vim'
 Bundle 'surround.vim'
 Bundle 'unite.vim'
+Bundle 'yanktmp.vim'
 
 " GitHub repos
 Bundle 'kchmck/vim-coffee-script'
@@ -44,13 +45,18 @@ set encoding=utf-8                      " Default
 set fileencodings=utf-8,eucjp,iso2022jp " Select automatically
 
 
-" === Plugins
+" === Settings for plugins
 " RSense
 let g:rsenseHome="/opt/rsense-0.3/"
 
 " matchit
 let b:match_words="<begin>:<end>"
 
+" yanktmp
+map <silent> sy :call YanktmpYank()<cr>
+map <silent> sp :call YanktmpPaste_p()<cr>
+map <silent> sP :call YanktmpPaste_P()<cr>
+let g:yanktmp_file = '/tmp/yanktmp'
 
 " === Space Characters
 set tabstop=2    " Tab width
@@ -100,7 +106,7 @@ match EOLSpace /\s\+$/
 
 
 " === Others
-set number       " Display line numbers
+set nonu         " Not display line numbers
 set showmatch    " Show bracket pair
 set hidden       " Buffer switchable with not-saved buffers
 set scroll=1     " Set scroll number of ^u and ^d
