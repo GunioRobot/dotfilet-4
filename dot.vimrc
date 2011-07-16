@@ -46,9 +46,6 @@ set fileencodings=utf-8,eucjp,iso2022jp " Select automatically
 
 
 " === Settings for plugins
-" RSense
-let g:rsenseHome="/opt/rsense-0.3/"
-
 " matchit
 let b:match_words="<begin>:<end>"
 
@@ -78,9 +75,6 @@ set ignorecase                 " Ignore case
 
 " Find project
 map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
-
-" Ruby
-map fd :RSenseJumpToDefinition " Find Definition
 
 
 " ===  Movings
