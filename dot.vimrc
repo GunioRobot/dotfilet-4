@@ -20,7 +20,6 @@ Bundle 'gmarik/vundle'
 " Dependency:
 "   FuzzyFinder requires L9
 Bundle 'AutoComplPop'
-Bundle 'Command-T'
 Bundle 'FuzzyFinder'
 Bundle 'L9'
 Bundle 'OOP-javascript-indentation'
@@ -32,6 +31,7 @@ Bundle 'yanktmp.vim'
 
 " GitHub repos
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'thinca/vim-quickrun'
 Bundle 'vim-ruby/vim-ruby'
 
 
