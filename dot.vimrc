@@ -7,7 +7,9 @@
 " * :BundleClean
 
 
-" === Vundle
+" ----------------------------------------------------------------------
+" Vundle
+" ----------------------------------------------------------------------
 set nocompatible " Use extended functions of Vim
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -35,17 +37,23 @@ Bundle 'thinca/vim-quickrun'
 Bundle 'vim-ruby/vim-ruby'
 
 
-" === File types
+" ----------------------------------------------------------------------
+" File types
+" ----------------------------------------------------------------------
 filetype indent on " Indent depends on file type
 filetype plugin on " Valid plugin
 
 
-" === Character codes
+" ----------------------------------------------------------------------
+" Character codes
+" ----------------------------------------------------------------------
 set encoding=utf-8                      " Default
 set fileencodings=utf-8,eucjp,iso2022jp " Select automatically
 
 
-" === Settings for plugins
+" ----------------------------------------------------------------------
+" Settings for plugins
+" ----------------------------------------------------------------------
 " matchit
 let b:match_words="<begin>:<end>"
 
@@ -55,13 +63,18 @@ map <silent> sp :call YanktmpPaste_p()<cr>
 map <silent> sP :call YanktmpPaste_P()<cr>
 let g:yanktmp_file = '/tmp/yanktmp'
 
-" === Space Characters
+
+" ----------------------------------------------------------------------
+" Space Characters
+" ----------------------------------------------------------------------
 set tabstop=2    " Tab width
 set shiftwidth=2 " Shift width
 set expandtab    " Insert half space instead of tab
 
 
-" === Statuses
+" ----------------------------------------------------------------------
+" Statuses
+" ----------------------------------------------------------------------
 set laststatus=2 " Display status line always
 set showcmd      " Show inputting command to status line
 
@@ -69,7 +82,9 @@ set showcmd      " Show inputting command to status line
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 
-" === Searchings
+" ----------------------------------------------------------------------
+" Searchings
+" ----------------------------------------------------------------------
 set incsearch                  " Incremental search
 set ignorecase                 " Ignore case
 
@@ -77,12 +92,16 @@ set ignorecase                 " Ignore case
 map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
 
 
-" ===  Movings
+" ----------------------------------------------------------------------
+" Movings
+" ----------------------------------------------------------------------
 map bf :e # " Back to previous File
 map bc `'   " Back to previous jumped Cursor
 
 
-" === Highlights
+" ----------------------------------------------------------------------
+" Highlights
+" ----------------------------------------------------------------------
 syntax on    " Enable highlights
 set hlsearch " Highlight searched strings
 
@@ -90,7 +109,10 @@ set hlsearch " Highlight searched strings
 highlight EOLSpace ctermbg=white
 match EOLSpace /\s\+$/
 
-" === Command Line
+
+" ----------------------------------------------------------------------
+" Command Line
+" ----------------------------------------------------------------------
 " Emacs-like movings
 :cnoremap <C-A> <Home>
 :cnoremap <C-B> <Left>
@@ -99,7 +121,9 @@ match EOLSpace /\s\+$/
 :cnoremap <C-K> <Delete>
 
 
-" === Others
+" ----------------------------------------------------------------------
+" Others
+" ----------------------------------------------------------------------
 set nonu         " Not display line numbers
 set showmatch    " Show bracket pair
 set hidden       " Buffer switchable with not-saved buffers
