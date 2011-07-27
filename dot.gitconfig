@@ -48,4 +48,5 @@
   rs = reset
 
   sc = shortlog -s # SCouter
+  sh = stash
   st = status
