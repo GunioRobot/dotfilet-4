@@ -52,7 +52,7 @@ set fileencodings=utf-8,eucjp,iso2022jp " Select automatically
 
 
 " ----------------------------------------------------------------------
-" Settings for plugins
+" Plugins
 " ----------------------------------------------------------------------
 " matchit
 let b:match_words="<begin>:<end>"
@@ -65,7 +65,7 @@ let g:yanktmp_file = '/tmp/yanktmp'
 
 
 " ----------------------------------------------------------------------
-" Space Characters
+" Space
 " ----------------------------------------------------------------------
 set tabstop=2    " Tab width
 set shiftwidth=2 " Shift width
@@ -139,3 +139,6 @@ set ambiwidth=double
 " Rename file
 " Usage: On file you want to change, type :Rename [new_file_name]
 command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))|w
+
+" After insert, automatically set nopaste
+autocmd InsertLeave * set nopaste
