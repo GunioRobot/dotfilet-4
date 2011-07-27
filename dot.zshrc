@@ -131,6 +131,7 @@ RPROMPT='[%~]$(vcs_info_with_color)'
 
 # === Others
 export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
+export EDITOR=vim
 
 setopt auto_cd # cd-able without cd
 setopt auto_pushd # cd-able to past directories by cd -[tab]
