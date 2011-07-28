@@ -138,3 +138,5 @@ setopt auto_pushd # cd-able to past directories by cd -[tab]
 setopt correct # Correct wrong commands
 setopt list_packed
 setopt cdable_vars
+
+bindkey -e
