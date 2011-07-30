@@ -42,6 +42,7 @@ alias du='du -h'
 
 alias e='exit'
 alias g='git'
+alias h='cd ~'
 alias j='jobs -l'
 alias n='netstat -tuna'
 alias p='ps auxxx'
