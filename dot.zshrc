@@ -17,7 +17,7 @@ setopt hist_ignore_dups # Ignore duplicated command of history
 setopt share_history # Share history between terminals by HISTFILE
 
 # === Prompt
-PROMPT='%n@%m:%(5~,%-2~/.../%2~,%~)%# '
+PROMPT='%n%# '
 
 # === Aliases
 # lists
