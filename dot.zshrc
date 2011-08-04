@@ -17,7 +17,7 @@ setopt hist_ignore_dups # Ignore duplicated command of history
 setopt share_history # Share history between terminals by HISTFILE
 
 # === Prompt
-PROMPT='%n@%m:%(5~,%-2~/.../%2~,%~)%# '
+PROMPT='%n%# '
 
 # === Aliases
 # lists
@@ -42,6 +42,7 @@ alias du='du -h'
 
 alias e='exit'
 alias g='git'
+alias h='cd ~'
 alias j='jobs -l'
 alias n='netstat -tuna'
 alias p='ps auxxx'
