@@ -20,21 +20,31 @@ setopt share_history # Share history between terminals by HISTFILE
 PROMPT='%n%# '
 
 # === Aliases
-# lists
-alias ls='ls -FG'
-alias la='ls -A'
-alias sl='ls'
-
-# rake
-alias rake_seed='rake db:seed'
-alias rake_migration='rake db:migrate:redo db:test:clone_structure'
-
-# others
+# bundle
 alias b='bundle'
 alias be='bundle exec'
 alias bi='bundle install'
 alias bo='bundle open'
 
+# ls
+alias ls='ls -FG'
+alias la='ls -A'
+alias sl='ls' # Hedge typo
+
+# rails
+alias r='rails'
+alias rc='rails c'
+alias rs='rails s'
+
+# rake
+alias rk='rake'
+alias rksd='rake db:seed'
+alias rksp='rake spec'
+alias rkcu='rake cucumber'
+alias rkt='rake spec cucumber' # Test all
+alias rkrs='rake db:drop db:create db:migrate' # ReSet
+
+# others
 alias c='coffee'
 alias cof='coffee'
 
@@ -46,10 +56,6 @@ alias h='cd ~'
 alias j='jobs -l'
 alias n='netstat -tuna'
 alias p='ps auxxx'
-
-alias r='rails'
-alias rc='rails c'
-alias rs='rails s'
 
 alias s='svn'
 
