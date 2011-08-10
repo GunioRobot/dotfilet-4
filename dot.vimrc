@@ -143,5 +143,5 @@ command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))|w
 " After insert, automatically set nopaste
 autocmd InsertLeave * set nopaste
 
-" After there command, list shown, type an item, then jump to there
+" After these command, list shown, type an item, then jump to there
 autocmd QuickfixCmdPost make,grep,grepadd,vimgrep,vimgrepadd cwin
