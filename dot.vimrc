@@ -34,6 +34,7 @@ Bundle 'yanktmp.vim'
 " GitHub repos
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thinca/vim-quickrun'
+Bundle 'thinca/vim-scouter'
 Bundle 'vim-ruby/vim-ruby'
 
 
