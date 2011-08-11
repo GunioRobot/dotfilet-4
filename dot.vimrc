@@ -19,19 +19,22 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
-" Dependency:
-"   FuzzyFinder requires L9
+" Dependency: (A -> B: A requires B)
+"   FuzzyFinder -> L9
+"   ecomba/vim-ruby-refactoring -> matchit.vim
 Bundle 'AutoComplPop'
 Bundle 'FuzzyFinder'
 Bundle 'L9'
 Bundle 'OOP-javascript-indentation'
 Bundle 'cucumber.zip'
+Bundle 'matchit.zip'
 Bundle 'rails.vim'
 Bundle 'surround.vim'
 Bundle 'unite.vim'
 Bundle 'yanktmp.vim'
 
 " GitHub repos
+Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-scouter'
