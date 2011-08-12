@@ -1,4 +1,6 @@
-# === Complement
+# ----------------------------------------------------------------------
+# Complement
+# ----------------------------------------------------------------------
 # Command complemention e.g. ls -[tab] then list options
 autoload -U compinit
 compinit
@@ -6,20 +8,28 @@ compinit
 # Colorize completion list e.g. ls [tab]
 zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
-# === Language
+# ----------------------------------------------------------------------
+# Language
+# ----------------------------------------------------------------------
 export LANG=ja_JP.UTF-8
 
-# === History
+# ----------------------------------------------------------------------
+# History
+# ----------------------------------------------------------------------
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 setopt hist_ignore_dups # Ignore duplicated command of history
 setopt share_history # Share history between terminals by HISTFILE
 
-# === Prompt
+# ----------------------------------------------------------------------
+# Prompt
+# ----------------------------------------------------------------------
 PROMPT='%n%# '
 
-# === Aliases
+# ----------------------------------------------------------------------
+# Aliases
+# ----------------------------------------------------------------------
 # bundle
 alias b='bundle'
 alias be='bundle exec'
@@ -66,7 +76,9 @@ alias v='vim'
 
 alias up='cd ..'
 
-# === Git status
+# ----------------------------------------------------------------------
+# Git status
+# ----------------------------------------------------------------------
 setopt prompt_subst
 autoload -Uz colors
 colors
@@ -136,7 +148,9 @@ function vcs_info_with_color() {
 }
 RPROMPT='[%~]$(vcs_info_with_color)'
 
-# === Others
+# ----------------------------------------------------------------------
+# Others
+# ----------------------------------------------------------------------
 export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
 export EDITOR=vim
 
