@@ -160,4 +160,6 @@ setopt correct # Correct wrong commands
 setopt list_packed
 setopt cdable_vars
 
-bindkey -e
+bindkey -e # Emacs keybind on terminal
+
+preexec(){ echo -ne "\ek${(z)2}\e\\" } # Show previous-typed command to screen title
