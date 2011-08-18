@@ -162,4 +162,9 @@ setopt cdable_vars
 
 bindkey -e # Emacs keybind on terminal
 
-preexec(){ echo -ne "\ek${(z)2}\e\\" } # Show previous-typed command to screen title
+# Show previous-typed command to screen title
+preexec() {
+  if [ $TERM = "screen" ]; then
+    echo -ne "\ek${1%% *}\e\\" # TODO arg not only 1 but 2
+  fi
+}
