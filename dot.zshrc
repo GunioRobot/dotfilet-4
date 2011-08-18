@@ -67,6 +67,8 @@ alias j='jobs -l'
 alias n='netstat -tuna'
 alias p='ps auxxx'
 
+alias reload='source ~/.zshrc'
+
 alias s='svn'
 
 alias sc='screen -U'
@@ -162,4 +164,10 @@ setopt cdable_vars
 
 bindkey -e # Emacs keybind on terminal
 
-preexec(){ echo -ne "\ek${(z)2}\e\\" } # Show previous-typed command to screen title
+# Show previous-typed command to screen title
+# Not to show lengthy title, show only command and a first arg if exists
+preexec() {
+  command="${(z)2}"
+  array=(`echo $command`) # String to Array
+  echo -ne "\ek$array[1] $array[2]\e\\"
+}
