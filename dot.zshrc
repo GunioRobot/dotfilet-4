@@ -167,7 +167,9 @@ bindkey -e # Emacs keybind on terminal
 # Show previous-typed command to screen title
 # Not to show lengthy title, show only command and a first arg if exists
 preexec() {
-  command="${(z)2}"
-  array=(`echo $command`) # String to Array
-  echo -ne "\ek[$array[1] $array[2]]\e\\" # TODO when only first arg, ugly space shown
+  if [ $TERM = "screen" ]; then # Not to show previous-typed command on not screen
+    command="${(z)2}"
+    array=(`echo $command`) # String to Array
+    echo -ne "\ek[$array[1] $array[2]]\e\\" # TODO when only first arg, ugly space shown
+  fi
 }
