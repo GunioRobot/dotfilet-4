@@ -170,6 +170,7 @@ preexec() {
   if [ $TERM = "screen" ]; then # Not to show previous-typed command on not screen
     command="${(z)2}"
     array=(`echo $command`) # String to Array
-    echo -ne "\ek[$array[1] $array[2]]\e\\" # TODO when only first arg, ugly space shown
+    title=(`echo "$array[1] $array[2]" | cut -c1-10`)
+    echo -ne "\ek[$title]\e\\"
   fi
 }
