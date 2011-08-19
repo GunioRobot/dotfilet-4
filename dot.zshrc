@@ -169,5 +169,5 @@ bindkey -e # Emacs keybind on terminal
 preexec() {
   command="${(z)2}"
   array=(`echo $command`) # String to Array
-  echo -ne "\ek$array[1] $array[2]\e\\"
+  echo -ne "\ek[$array[1] $array[2]]\e\\" # TODO when only first arg, ugly space shown
 }
