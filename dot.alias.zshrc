@@ -37,6 +37,8 @@ alias p='ps auxxx'
 
 alias reload='source ~/.zshrc'
 
+alias ro='vim - -R' # Read Only
+
 alias s='svn'
 
 alias sc='screen -U'
