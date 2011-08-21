@@ -9,11 +9,6 @@ compinit
 zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
 # ----------------------------------------------------------------------
-# Language
-# ----------------------------------------------------------------------
-export LANG=ja_JP.UTF-8
-
-# ----------------------------------------------------------------------
 # History
 # ----------------------------------------------------------------------
 HISTFILE=~/.zsh_history
@@ -21,11 +16,6 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 setopt hist_ignore_dups # Ignore duplicated command of history
 setopt share_history # Share history between terminals by HISTFILE
-
-# ----------------------------------------------------------------------
-# Prompt
-# ----------------------------------------------------------------------
-PROMPT='%n%# '
 
 # ----------------------------------------------------------------------
 # Aliases
@@ -52,7 +42,7 @@ alias rksd='rake db:seed'
 alias rksp='rake spec'
 alias rkcu='rake cucumber'
 alias rkt='rake spec cucumber' # Test all
-alias rkrs='rake db:drop db:create db:migrate' # ReSet
+alias rkrs='rake db:drop && rake db:drop RAILS_ENV=test && rake db:create db:migrate && rake db:test:clone_structure' # ReSet
 
 # others
 alias c='coffee'
@@ -79,7 +69,7 @@ alias v='vim'
 alias up='cd ..'
 
 # ----------------------------------------------------------------------
-# Git status
+# Git status on command prompt
 # ----------------------------------------------------------------------
 setopt prompt_subst
 autoload -Uz colors
@@ -151,20 +141,9 @@ function vcs_info_with_color() {
 RPROMPT='[%~]$(vcs_info_with_color)'
 
 # ----------------------------------------------------------------------
-# Others
+# Screen
 # ----------------------------------------------------------------------
-export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
-export EDITOR=vim
-
-setopt auto_cd # cd-able without cd
-setopt auto_pushd # cd-able to past directories by cd -[tab]
-setopt correct # Correct wrong commands
-setopt list_packed
-setopt cdable_vars
-
-bindkey -e # Emacs keybind on terminal
-
-# Show previous-typed command to screen title
+# Show previous-typed command to title
 # Not to show lengthy title, show only command and a first arg if exists
 preexec() {
   if [ $TERM = "screen" ]; then # Not to show previous-typed command on not screen
@@ -174,3 +153,20 @@ preexec() {
     echo -ne "\ek[$title]\e\\"
   fi
 }
+
+# ----------------------------------------------------------------------
+# Others
+# ----------------------------------------------------------------------
+export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
+export EDITOR=vim
+export LANG=ja_JP.UTF-8
+
+setopt auto_cd # cd-able without cd
+setopt auto_pushd # cd-able to past directories by cd -[tab]
+setopt correct # Correct wrong commands
+setopt list_packed
+setopt cdable_vars
+
+PROMPT='%n%# '
+
+bindkey -e # Emacs keybind on terminal
