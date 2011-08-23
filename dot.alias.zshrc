@@ -39,6 +39,7 @@ alias s='svn'
 alias sc='screen -U'
 alias screen='screen -U'
 alias sl='ls' # Hedge typo
+alias ss='socketstream'
 
 alias u='cd ..' # Up
 alias up='cd ..'
