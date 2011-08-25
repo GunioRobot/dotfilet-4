@@ -18,7 +18,7 @@ setopt hist_ignore_dups # Ignore duplicated command of history
 setopt share_history # Share history between terminals by HISTFILE
 
 # ----------------------------------------------------------------------
-# Screen
+# screen
 # ----------------------------------------------------------------------
 # Show previous-typed command to title
 # Not to show lengthy title, show only command and a first arg if exists
