@@ -34,19 +34,22 @@ preexec() {
 # ----------------------------------------------------------------------
 # Others
 # ----------------------------------------------------------------------
-export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
 export EDITOR=vim
 export LANG=ja_JP.UTF-8
+export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
 
 setopt auto_cd # cd-able without cd
 setopt auto_pushd # cd-able to past directories by cd -[tab]
 setopt correct # Correct wrong commands
-setopt list_packed
 setopt cdable_vars
+setopt list_packed
+setopt print_eight_bit # Print Japanese file name
 
 PROMPT='%n%# '
 
-bindkey -e # Emacs keybind on terminal
+# Emacs keybind on terminal
+# *** Notice: If 'export EDITOR=vim', then automatically set 'bindkey -v'
+bindkey -e
 
 # Apply extracted files
 source ~/.alias.zshrc
