@@ -24,6 +24,8 @@ alias ls='ls -FG'
 
 alias n='netstat -tuna'
 
+alias o='open'
+
 alias p='ps auxxx'
 
 alias r='rails'
