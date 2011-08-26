@@ -31,7 +31,7 @@ alias rc='rails c'
 alias reload='source ~/.zshrc'
 alias rk='rake'
 alias rkcu='rake cucumber'
-alias rkrs='rake db:drop && rake db:drop RAILS_ENV=test && rake db:create db:migrate && rake db:test:clone_structure' # ReSet
+alias rkrs='rake db:drop && rake db:drop RAILS_ENV=test && rake db:create db:migrate db:test:clone_structure db:seed' # ReSet
 alias rksd='rake db:seed'
 alias rksp='rake spec'
 alias rkt='rake spec cucumber' # Test all
