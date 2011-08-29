@@ -37,7 +37,6 @@ alias rkrs='rake db:drop && rake db:drop RAILS_ENV=test && rake db:create db:mig
 alias rksd='rake db:seed'
 alias rksp='rake spec'
 alias rkt='rake spec cucumber' # Test all
-alias ro='vim - -R' # Read Only
 alias rs='rails s'
 
 alias s='svn'
@@ -57,4 +56,7 @@ alias v='vim'
 alias -g G='| grep'
 alias -g H='| head'
 alias -g L='| less'
+alias -g S='| sort'
 alias -g T='| tail'
+alias -g V='| view - -R'
+alias -g VR='| view - -R'
