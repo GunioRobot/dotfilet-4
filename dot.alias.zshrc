@@ -8,10 +8,13 @@ alias bo='bundle open'
 
 alias c='coffee'
 alias cof='coffee'
+alias ccm='cucumber'
 
 alias du='du -h'
 
 alias e='exit'
+
+alias f='find'
 
 alias g='git'
 
@@ -33,6 +36,7 @@ alias rc='rails c'
 alias reload='source ~/.zshrc'
 alias rk='rake'
 alias rkcu='rake cucumber'
+alias rkcuw='rake cucumber:wip'
 alias rkrs='rake db:drop && rake db:drop RAILS_ENV=test && rake db:create db:migrate db:test:clone_structure db:seed' # ReSet
 alias rksd='rake db:seed'
 alias rksp='rake spec'

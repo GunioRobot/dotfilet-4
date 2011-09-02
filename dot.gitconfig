@@ -47,6 +47,7 @@
   rbrd = push --delete origin # Remote BRanch Delete
 
   rh = reset --hard
+  rmc = rm --cached
   rs = reset
 
   sc = shortlog -s # SCouter
