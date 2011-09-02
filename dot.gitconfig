@@ -12,7 +12,6 @@
   ada = add -A
 
   bl = blame
-
   br = branch
   bra = branch -a
   brd = branch -d
@@ -23,7 +22,6 @@
   ca = commit -v --amend
   ci = commit -v
   cm = commit -m
-
   co = checkout
   cob = checkout -b
 
@@ -40,12 +38,10 @@
 
   pl = pull --prune # always delete stale remote branches
   pr = pull --rebase
-
   ps = push
 
   rb = rebase
   rbrd = push --delete origin # Remote BRanch Delete
-
   rh = reset --hard
   rmc = rm --cached
   rs = reset
