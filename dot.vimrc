@@ -92,7 +92,6 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 " Searchings
 " ----------------------------------------------------------------------
 set incsearch                  " Incremental search
-set ignorecase                 " Ignore case
 
 " Find project
 map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
