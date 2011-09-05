@@ -46,7 +46,7 @@
   rmc = rm --cached
   rs = reset
 
-  sc = shortlog -s # SCouter
+  sc = shortlog -sn # SCouter
   sh = stash
   st = status
 
