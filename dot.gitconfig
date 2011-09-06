@@ -42,6 +42,7 @@
   ps = push
 
   rb = rebase
+  rbi = rebase -i
   rbrd = push --delete origin # Remote BRanch Delete
   rh = reset --hard
   rmc = rm --cached
