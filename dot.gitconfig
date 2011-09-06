@@ -35,6 +35,7 @@
   lv = log --graph --format='[%h %cd] %s (%cn)' --date=local # Log Verbose
 
   mg = merge
+  mgnf = merge --no-ff # MerGe No Fast-foreword
 
   pl = pull --prune # always delete stale remote branches
   pr = pull --rebase
