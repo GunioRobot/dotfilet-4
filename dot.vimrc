@@ -150,3 +150,6 @@ autocmd InsertLeave * set nopaste
 
 " After these command, list shown, type an item, then jump to there
 autocmd QuickfixCmdPost make,grep,grepadd,vimgrep,vimgrepadd cwin
+
+noremap ; :
+noremap : ;
