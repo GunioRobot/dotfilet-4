@@ -22,6 +22,7 @@ alias h='cd ~' # to Home
 
 alias j='jobs -l'
 
+alias l='ls'
 alias la='ls -A'
 alias ls='ls -FG'
 
