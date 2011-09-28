@@ -31,7 +31,8 @@
 
   gr = grep
 
-  l = log --graph --format='[%h %cd] %s (%cn)' --date=local # Log Verbose
+  l = log --format='[%h %cd] %s (%cn)' --date=local
+  lg = log --graph --format='[%h %cd] %s (%cn)' --date=local # Log Graph
   lp = log -p
 
   mg = merge
