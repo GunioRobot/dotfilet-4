@@ -49,6 +49,7 @@
   rh = reset --hard
   rmc = rm --cached
   rs = reset
+  ru = remote update
 
   sc = shortlog -sn # SCouter
   sh = stash
