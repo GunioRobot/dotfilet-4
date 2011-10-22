@@ -151,6 +151,9 @@ set ignorecase
 " Find project
 map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
 
+" Cancel highlight of search result
+map n/ :noh<cr>
+
 " Center words for search
 nmap n nzz
 nmap N Nzz
@@ -159,11 +162,15 @@ nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
 
+
 " ----------------------------------------------------------------------
 " Movings
 " ----------------------------------------------------------------------
-map bf :e # " Back to previous File
-map bc `'   " Back to previous jumped Cursor
+" Back to previous File
+map bf :e #<cr>
+
+" Back to previous jumped Cursor
+map bc `'
 
 
 " ----------------------------------------------------------------------
@@ -211,5 +218,5 @@ autocmd InsertLeave * set nopaste
 " After these command, list shown, type an item, then jump to there
 autocmd QuickfixCmdPost make,grep,grepadd,vimgrep,vimgrepadd cwin
 
+" Number of times to use ':' is more than ';'
 noremap ; :
-noremap : ;
