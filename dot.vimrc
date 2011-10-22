@@ -151,6 +151,13 @@ set ignorecase
 " Find project
 map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
 
+" Center words for search
+nmap n nzz
+nmap N Nzz
+nmap * *zz
+nmap # #zz
+nmap g* g*zz
+nmap g# g#zz
 
 " ----------------------------------------------------------------------
 " Movings
