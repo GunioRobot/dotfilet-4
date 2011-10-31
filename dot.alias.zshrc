@@ -24,6 +24,7 @@ alias j='jobs -l'
 
 alias l='ls'
 alias la='ls -A'
+alias ll='ls -l'
 alias ls='ls -FG'
 
 alias n='netstat -tuna'
