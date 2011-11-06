@@ -29,6 +29,8 @@
   di = diff
   dic = diff --cached
 
+  fh = fetch
+
   gr = grep
 
   l = log --format='[%h %ci] %s (%cn)' --date=local
@@ -56,3 +58,4 @@
   st = status
 
   t = tag
+  td = tag -d
