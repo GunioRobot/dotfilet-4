@@ -55,7 +55,7 @@
 
   sc = shortlog -sn # SCouter
   sh = stash
-  st = status
+  st = status -sb
 
   t = tag
   td = tag -d
