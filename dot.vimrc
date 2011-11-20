@@ -98,9 +98,6 @@ set ignorecase
 " Find project
 map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
 
-" Cancel highlight of search result
-map n/ :noh<cr>
-
 " Center words for search
 nmap n nzz
 nmap N Nzz
